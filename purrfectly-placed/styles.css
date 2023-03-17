@@ -1,0 +1,57 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff; /* Set background color for navigation bar */
+    height: 150px; /* Set height of navigation bar */
+    padding: 0 20px; /* Set padding for navigation bar */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to navigation bar */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 350px; /* Set width of logo image */
+    height: 150px; /* Set height of logo image */
+    margin-right: 10px; /* Add margin to logo image */
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+.hero-image {
+    position: relative;
+    display: inline-block;
+    max-height: 816px;
+    max-width: 1600px;
+}
+
+.hero-image img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-image button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    bottom: 0;
+}
