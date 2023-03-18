@@ -6,7 +6,45 @@ nav {
     height: 150px; /* Set height of navigation bar */
     padding: 0 20px; /* Set padding for navigation bar */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow to navigation bar */
+    overflow: hidden;
 }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    nav li {
+        float: none;
+    }
+
+    nav li a {
+        padding: 10px;
+        border-bottom: 1px solid white;
+    }
+}
+
 
 .logo {
     display: flex;
@@ -14,22 +52,10 @@ nav {
 }
 
 .logo img {
-    width: 350px; /* Set width of logo image */
-    height: 150px; /* Set height of logo image */
+    width: 100%;
+    max-width: 350px; /* Set width of logo image */
     margin-right: 10px; /* Add margin to logo image */
     justify-content: space-between;
-}
-
-ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    margin: 0 10px;
 }
 
 .hero-image {
@@ -54,4 +80,194 @@ ul li {
     transform: translateX(-50%);
     z-index: 1;
     bottom: 0;
+}
+
+.information-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.information-column {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.information-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.information-column p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.adoption-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adoption-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(20% - 7px);
+    margin-bottom: 20px;
+}
+
+.adoption-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.adoption-column p {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.adoption-column button {
+    /*margin-top: 10px;*/
+    align-items: center;
+    color: #e6e5ec;
+    background-color: #484068;
+}
+
+.newsletter-form button {
+    color: #e6e5ec;
+    background-color: #484068;
+}
+
+.social-media-buttons {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.social-media-buttons li {
+    margin: 0 10px;
+}
+
+.social-media-buttons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.back-to-top a {
+    display: inline-block;
+    color: #e6e5ec;
+    background-color: #484068;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.back-to-top a:hover {
+    background-color: #555;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
+
+.cat-for-adoption-section-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #484068;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #c5c8e0;
+}
+
+.cat-for-adoption-section-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid #484068;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.adoption-image-right {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    align-content: center;
+    border: 4px solid white;
+}
+
+.adoption-image-left {
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    align-content: center;
+    border: 4px solid #484068;
+}
+
+.adoption-image {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    align-content: center;
+}
+
+.adoption-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.adoption-content p {
+    margin-bottom: 20px;
+}
+
+.left-button {
+    background-color: #484068;
+    color: #e6e5ec;
+}
+
+.adopt_h3 {
+    font-size: 35px;
+    color: blue;
+}
+
+#adoption_header {
+    font-size: 30px;
+    color: #484068;
+}
+
+#adoption_header01 {
+
+}
+
+#volunteer_button {
+    display: flex;
+    background-color: #484068;
+    color: #e6e5ec;
+    align-items: center;
 }

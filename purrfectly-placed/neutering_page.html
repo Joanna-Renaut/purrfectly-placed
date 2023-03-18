@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Neutering</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.5.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="images/paw_logo-removebg_text.png"
+                 alt="Purrfectly Placed Logo" />
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">HOME</a> </li>
+                <Li><a href="adopt_page.html">ADOPT</a></Li>
+                <Li><a href="volunteer_page.html">VOLUNTEER</a></Li>
+                <Li><a href="about_page.html">ABOUT</a></Li>
+                <Li><a href="contact_page.html">CONTACT</a></Li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section>
+    <p>
+        Purrfectly Placed offers a comprehensive neutering service on a sliding scale to cat owners in the local
+        community. This service is important for controlling the population of cats and preventing the spread of
+        diseases among the cat population. Purrfectly Placed's neutering service is designed to be affordable for
+        everyone, with fees based on a sliding scale according to the cat owner's income. This ensures that all cats
+        can benefit from the service, regardless of their owner's financial situation. The organization's skilled and
+        compassionate veterinarians provide expert care during the neutering process, ensuring that the cats are
+        healthy and well-cared for. By providing this vital service, Purrfectly Placed is making a significant
+        contribution to the welfare of cats in the community.
+    </p>
+    <p>
+        To access our neutering services, fill out the form below or contact us via the contact page.
+    </p>
+</section>
+<section>
+    <form action="submit-neutering-request.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="cat-name">Cat's Name:</label>
+        <input type="text" id="cat-name" name="cat-name" required><br>
+
+        <label for="cat-age">Cat's Age:</label>
+        <input type="number" id="cat-age" name="cat-age" min="0" required><br>
+
+        <label for="cat-gender">Cat's Gender:</label>
+        <select id="cat-gender" name="cat-gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <label for="cat-breed">Cat's Breed:</label>
+        <input type="text" id="cat-breed" name="cat-breed" required><br>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+</section>
+<footer>
+    <ul class="social-media-buttons">
+        <li><a href="https://www.facebook.com"><img src="images/facebook_logo.png" alt="Facebook Logo"></a></li>
+        <li><a href="https://www.twitter.com"><img src="images/twitter_logo.png" alt="Twitter Logo"></a></li>
+        <li><a href="https://www.instagram.com"><img src="images/instagram_logo.png" alt="Instagram Logo"></a></li>
+        <li><a href="https://www.linkedin.com"><img src="images/linkedin_logo.png" alt="LinkedIn Logo"></a></li>
+    </ul>
+    <p>&#169 Copyright 2023</p>
+    <div class="back-to-top">
+        <a href="#">Back to Top</a>
+    </div>
+</footer>
+</body>
+<script src="main.js"></script>
+</html>
