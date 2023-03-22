@@ -42,7 +42,7 @@
     </p>
 </section>
 <section>
-    <form action="submit-neutering-request.php" method="post">
+    <form id="my-form" action="submit-neutering-request.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
 
@@ -69,7 +69,11 @@
         <input type="text" id="cat-breed" name="cat-breed" required><br>
 
         <button type="submit">Submit Request</button>
+        <div id="success-message" style="display: none;">
+            Thank you for submitting your request!
+        </div>
     </form>
+
 
 </section>
 <footer>

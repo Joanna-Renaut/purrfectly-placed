@@ -6,7 +6,7 @@
 </head>
 <body>
   <section>
-    <form action="#" method="post">
+    <form id="my-form" action="#" method="post">
       <h2>Personal Information</h2>
       <label for="full-name">Full Name:</label>
       <input type="text" id="full-name" name="full-name" required><br>
@@ -90,7 +90,12 @@
       <br>
 
       <button type="submit">Submit</button>
+      <div id="success-message" style="display: none;">
+        Thank you for submitting your request!
+      </div>
+    </form>
 
   </section>
 </body>
+<script src="main.js"></script>
 </html>

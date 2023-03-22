@@ -257,6 +257,7 @@ section {
 }
 
 #adoption_header {
+    padding-left: 50px;
     font-size: 30px;
     color: #484068;
 }
@@ -270,4 +271,63 @@ section {
     background-color: #484068;
     color: #e6e5ec;
     align-items: center;
+}
+
+.v_img_p {
+    width: 100%
+}
+#v_img {
+    float: right;
+    width: 40%;
+    padding-left: 20px;
+}
+
+#v_p {
+    float: none;
+    padding-left: 50px;
+}
+
+.about_section {
+    width: 100%
+}
+#about_image {
+    float: right;
+    width: 40%;
+    padding-left: 20px;
+}
+
+#about_para {
+    float: none;
+    padding-left: 50px;
+}
+
+.address_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.address_column {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.address_column p {
+    padding-top: 80px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+#adoption_section_top {
+    width: 100%
+}
+#adoption_image {
+    float: right;
+    width: 40%;
+    padding-left: 20px;
+}
+
+#adoption_paragraphs {
+    float: none;
+    padding-left: 50px;
 }
