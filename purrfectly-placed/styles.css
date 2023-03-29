@@ -276,7 +276,18 @@ section {
     margin-top: 0;
 }
 
-#adoption_header {
+h2 {
+    font-size: 30px;
+    color: #154a76;
+}
+
+h1 {
+    font-size: 40px;
+    color: #154a76;
+}
+
+.indented_header2 {
+    padding: 0 50px;
     font-size: 30px;
     color: #154a76;
 }
